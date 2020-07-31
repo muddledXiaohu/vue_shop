@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router/router'
 // 导入全剧样式
 import './assets/css/global.css'
+import TreeTable from 'vue-table-with-tree-grid'
 
 import axios from 'axios'
 
@@ -15,6 +16,8 @@ axios.interceptors.request.use(config => {
 })
 Vue.config.productionTip = false
 // Vue.use(ElementUi)
+
+Vue.component('tree-table', TreeTable)
 
 new Vue({
   router,
