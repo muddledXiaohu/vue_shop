@@ -145,7 +145,7 @@ export default {
         params: this.queryInfo
       })
       if (res.meta.status !== 200) {
-        this.$message.error('分类查询失败!')
+        return this.$message.error('分类查询失败!')
       }
       // console.log(res)
       this.catelist = res.data.result
