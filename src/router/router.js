@@ -10,6 +10,8 @@ import Cate from '../components/goods/Cate.vue'
 import Params from '../components/goods/Params.vue'
 import Goods from '../components/goods/Goods.vue'
 import Add from '../components/goods/Add.vue'
+import Orders from '../components/orders/Orders.vue'
+import Reports from '../components/reports/Reports.vue'
 import '../plugins/element'
 import 'element-ui/lib/theme-chalk/index.css'
 import '../assets/fonts/iconfont.css'
@@ -32,7 +34,9 @@ const router = new Router({
         { path: '/categories', component: Cate },
         { path: '/params', component: Params },
         { path: '/goods', component: Goods },
-        { path: '/add', component: Add }
+        { path: '/add', component: Add },
+        { path: '/orders', component: Orders },
+        { path: '/reports', component: Reports }
       ]
     }
   ]
